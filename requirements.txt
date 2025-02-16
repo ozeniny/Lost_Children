@@ -1,7 +1,10 @@
-opencv-python
-mtcnn
-insightface
 numpy
-scikit-image
+opencv-python
+torch
+torchvision
 scipy
-tensorflow
+mtcnn
+keras-facenet
+facenet-pytorch
+insightface
+scikit-image
