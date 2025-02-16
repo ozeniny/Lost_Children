@@ -14,7 +14,6 @@ def process_image_faces(image_path, output_folder, output_file):
         print(f"Failed to load image: {image_path}")
         return
 
-    img = sf.preprocess_image(img)
     faces = sf.detector.detect_faces(img)
 
     print(f"Detected {len(faces)} faces in the image.")
