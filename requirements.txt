@@ -4,3 +4,4 @@ insightface
 numpy
 scikit-image
 scipy
+tensorflow
