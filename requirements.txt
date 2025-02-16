@@ -8,3 +8,4 @@ keras-facenet
 facenet-pytorch
 insightface
 scikit-image
+tensorflow
