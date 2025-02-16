@@ -17,7 +17,6 @@ def get_image(input_img):
 
     print(f"Image shape: {img.shape}")
 
-    img = sf.preprocess_image(img)
     input_face = sf.detector.detect_faces(img)
 
     if input_face:
