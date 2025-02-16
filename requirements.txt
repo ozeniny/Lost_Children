@@ -1,2 +1,6 @@
 opencv-python
 mtcnn
+insightface
+numpy
+scikit-image
+scipy
