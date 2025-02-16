@@ -23,15 +23,6 @@ def normalize_embedding(embedding):
         return embedding
     return embedding / max_abs
 
-def preprocess_image(img):
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    equalized = cv2.equalizeHist(gray)
-    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
-    adaptive_eq = clahe.apply(equalized)
-    denoised = cv2.fastNlMeansDenoising(adaptive_eq, None, h=10, searchWindowSize=21, templateWindowSize=7)
-    enhanced = exposure.adjust_gamma(denoised, gamma=1.2)
-    enhanced_bgr = cv2.cvtColor(enhanced, cv2.COLOR_GRAY2BGR)
-    return enhanced_bgr
 
 def get_embedding_InsightFace(face_region):
     
