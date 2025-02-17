@@ -1,5 +1,0 @@
-libnvinfer8
-libnvinfer-plugin8
-libnvinfer-bin
-software-properties-common
-wget
